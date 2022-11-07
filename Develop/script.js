@@ -67,13 +67,20 @@ function generatePassword(ThisIsPasswordLength) {
     Selection.push(uppercaseList)
   }
 
+  if (Selection.length === 0) {
+    Selection.push(symbolList)
+  }
+
   var generatedPassword = ""
 
   for (var i = 0; i < passwordLength; i++) {
     var randomList = getRandomItem(Selection)
     var randomChar = getRandomItem(randomList)
-    console.log(randomChar)
+    generatedPassword += randomChar
   }
+  
+  console.log(generatedPassword)
+
 
 }
 
