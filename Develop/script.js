@@ -78,9 +78,9 @@ function generatePassword(ThisIsPasswordLength) {
     var randomChar = getRandomItem(randomList)
     generatedPassword += randomChar
   }
-  
-  console.log(generatedPassword)
-
+   console.log(generatedPassword)
+   
+  return generatedPassword
 
 }
 
